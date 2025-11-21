@@ -40,3 +40,32 @@
 .info-box:nth-of-type(2n) {
   background-color: var(--color-infobox-2-bg);
 }
+
+.fadeIN {
+  animation: fadeIn_kf 1s linear;
+}
+
+@keyframes fadeIn_kf {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rotate {
+  animation: rotate_tf 5s infinite;
+}
+
+@keyframes rotate_tf {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

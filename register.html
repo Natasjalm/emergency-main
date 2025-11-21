@@ -1,81 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/form.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> <img class="ogo" src="img/logo2.svg" alt="logo"> </a>
+      </div>
+      <label class="switch">
+        <input id="theme-btn" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      <ul class="menu">
+        <li><a class="menuItem" href="instruction.html">Hjælp!</a></li>
+        <li><a class="menuItem" href="register.html">Opret hændelse</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="opret">Opret en 'laughing in a seriouse situation' hændelse</h1>
+    <section id="form-section">
+      <form id="form-info">
+
+        <h2 class="forms_tekst">Hvem?</h2>
+        <fieldset>
+          <legend><label for="name">Dit navn</label></legend>
+          <div>
+            <input id="name" name="name" type="text" placeholder="Skriv dit navn..." required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend><label for="age">Din alder</label></legend>
+          <div>
+            <input id="age" name="age" type="number" placeholder="Skriv din alder..." required min="1">
+          </div>
+        </fieldset>
+
+        <h2 class="forms_tekst">Hændelsen</h2>
+
+        <fieldset>
+          <legend><label for="beskrivelse">Beskrivelse af hændelsen</label></legend>
+          <div>
+            <textarea id="beskrivelse" name="beskrivelse"
+              placeholder="Jeg fik engang et grineanfald til min bedstemors begravelse..." required></textarea>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="dato">Hvornår skete hændelsen?</label></legend>
+          <div>
+            <input id="dato" name="dato" type="date" required>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend><label for="skala">Akavet-hed skala (1-10)</label></legend>
+          <div>
+            <input id="skala" name="skala" type="range" min="1" max="10">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div class="checkboxP">
+            <label for="checkbox"> <input id="checkbox" name="checkbox" type="checkbox" required></label>
+            <p>Jeg bekræfter, at oplysningerne fra mig er efter bedste evne korrekte.</p>
+
+          </div>
+        </fieldset>
+
+
+        <button id="submit_btn" type="submit">Opret din hændelse</button>
+      </form>
+    </section>
+
+
+
+
+    <section id="form-summary">
+      <h2>Opsummering</h2>
+
+      <article>
+        <p class="placeholder">Her ses svaret af dem der har svaret:</p>
+        <p class="opsumering"><b> Navn:</b></p>
+        <span class="name_output"></span>
+        <p class="opsumering"><b> Alder:</b></p>
+        <span class="age_output"></span>
+        <p class="opsumering"><b> Beskrivelse:</b></p>
+        <span class="beskrivelse_output"></span>
+        <p class="opsumering"><b> Dato:</b></p>
+        <span class="dato_output"></span>
+        <p class="opsumering"><b> Akavethed skala:</b></p>
+        <span class="skala_output"></span>
+
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/form.js"></script>
+  <script src="js/dark.js"></script>
+</body>
+
 </html>
