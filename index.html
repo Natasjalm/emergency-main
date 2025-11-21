@@ -3,16 +3,17 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/reset.css" />
-  <link rel="stylesheet" href="css/custom.css" />
-  <link rel="stylesheet" href="css/fonts.css" />
-  <link rel="stylesheet" href="css/general.css" />
-  <link rel="stylesheet" href="css/layout.css" />
-  <link rel="stylesheet" href="css/burger.css" />
-  <link rel="stylesheet" href="css/cards.css" />
-  <link rel="icon" type="image/png" href="img/fav.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/burger.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/infographic.css">
+  <link rel="icon" type="image/png" href="img/fav.png">
   <title>Emergency Site</title>
 </head>
 
@@ -20,72 +21,263 @@
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> LOGO-TYPE </a>
+        <a href="index.html"> <img class="ogo" src="img/logo2.svg" alt="logo"> </a>
       </div>
+      <label class="switch">
+        <input id="theme-btn" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-        <li><a class="menuItem" href="register.html">Indberet</a></li>
+        <li><a class="menuItem" href="instruction.html">Hjælp!</a></li>
+        <li><a class="menuItem" href="register.html">Opret hændelse</a></li>
       </ul>
       <button class="burger">
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>
       </button>
+
     </nav>
   </header>
   <section id="main-disclamer">
     <div id="main-disclamer-content">
-      <img src="warning" alt="ICON" />
+      <img class="skilt" src="img/logo-3.svg" alt="logo">
       <div>
-        <h1>OVERSKRIFT</h1>
-        <p class="sub">Underrubrik</p>
+        <h1 class="stor">GRINE-KAOS</h1>
+        <p class="sub">Ingen kan længere holde det seriøst</p>
       </div>
     </div>
   </section>
   <main>
     <section id="daily">
+
+      <!--Teaser 1 -->
       <article class="daily_card">
-        <img src="" alt="teaser_img" />
+        <img class="teaser1" src="img/teaser1.png" alt="teaser_img" />
         <div class="daily_text">
-          <h2>Teaser</h2>
+          <h2 class="h1_teaser">Råd til at bevare seriøsiteten i alvorlige øjeblikke.</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Vi kender det alle: et vigtigt møde, en højtidelig tale eller et øjeblik, hvor stilheden er tung – og
+            pludselig bobler
+            latteren frem.
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <p>Her finder du praktiske råd, mentale tricks og små redningsstrategier, så du kan bevare roen (og ansigtet),
+            når
+            situationen kræver alvor.</p>
+          <p>Se de bedste tips til at holde masken – også når du mest har lyst til at bryde sammen af grin.</p>
+          <a href="instruction.html" class="cta_btn">Se mere</a>
         </div>
       </article>
+
+      <!--Teaser 2 -->
       <article class="daily_card">
-        <img src="" alt="teaser_img" />
+        <img class="teaser1" src="img/teaser2.png" alt="teaser_img">
         <div class="daily_text">
-          <h2>Teaser</h2>
+          <h2 class="h1_teaser">Del din oplevelse</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            magnam ducimus ea, sed minima asperiores.
+            Nogle situationer er bare for alvorlige til at grine i… eller det tror vi i hvert fald. Men hvad gør man
+            egentlig, når
+            latteren bryder ud, selv når man burde være alvorlig?
           </p>
-          <a href="" class="cta_btn">Se mere</a>
+          <p>På vores side kan du dele dine egne øjeblikke, hvor du griner midt i en seriøs situation, og se, hvordan
+            andre håndterer
+            de pinlige, sjove eller helt absurde øjeblikke.</p>
+          <p>Del dit eget øjeblik, hvor du grinede midt i alvoren – tryk her og opret din hændelse.</p>
+          <a href="register.html" class="cta_btn">Se mere</a>
         </div>
       </article>
     </section>
+
     <section id="breaking">
+
+      <!--Artikel 1 -->
       <article class="news_card">
-        <h3>Nyhed</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <h2>DANSKERE RAMT AF NATIONALT GRINEFÆNOMEN - “DET STARTER MED ET FNIS…”</h2>
+        <p>Et uskyldigt grin har udviklet sig til et landsdækkende fænomen. Over hele Danmark kæmper folk for at holde
+          masken i de
+          mest seriøse situationer - men nervelatteren rammer, når man mindst venter det..</p>
+        <img class="b-1" src="img/artikel1.png" alt="news_img">
+
+        <div popover id="popop">
+          <h2>DANSKERE RAMT AF NATIONALT GRINEFÆNOMEN - “DET STARTER MED ET FNIS…”</h2>
+          <img src="img/artikel1.png" alt="news_img">
+          <p>København, onsdag — Der er udbrudt et mærkeligt, men højest genkendeligt fænomen i Danmark: folk kan
+            ganske enkelt ikke
+            lade være med at grine i de mest seriøse situationer.
+
+            Det starter som et lille fnis. En undertrykt lyd i halsen. Men før man ved af det, kæmper man for ikke at
+            sprutte midt i
+            en tavs forsamling - og så er det for sent.</p>
+          <h3>“Jeg kunne mærke, det kom snigende…”</h3>
+          <p>29-årige Sofie fra Odense fortæller, at det hele gik galt under hendes venindes bryllup:
+            “Præsten sagde noget helt normalt - men så lavede han en lille pause, og jeg ved ikke hvorfor, men min
+            hjerne
+            besluttede, at det var sjovt. Jeg prøvede at holde det inde, men så begyndte min næse at pive. Og så…
+            grinede jeg.
+            Højt.”
+            Flere lignende hændelser er rapporteret over hele landet - ved møder, eksamener, hospitalssamtaler og
+            endda under
+            konfirmationer.</p>
+          <h3>Eksperter: “En nervøs forsvarsmekanisme”</h3>
+          <p>Ifølge adfærdsforsker Dr. Karen Vestergaard fra Aarhus Universitet er der en logisk forklaring bag det
+            pinlige fænomen:
+            “Når vi står i en alvorlig situation, kan hjernen blive så overbelastet, at den vælger at reagere på den
+            mest upassende
+            måde. Latteren fungerer som et slags nødudløb - desværre bare på det værst tænkelige tidspunkt.”</p>
+          <h3>Et voksende samfundsproblem</h3>
+          <p>De sociale medier flyder nu over med videoer og bekendelser fra danskere, der har “kommet til” at grine,
+            mens de burde
+            have holdt masken. Nogle kalder det “grinekrise”, andre “latterangst” - men de fleste kan bare nikke
+            genkendende til
+            følelsen af at få klumpen i halsen, forsøge at holde den inde, og ende med et undertrykt prust, der lyder
+            som en defekt
+            støvsuger.</p>
+          <h3>“Vi skal turde tale om det”</h3>
+          <p>Flere psykologer opfordrer nu til, at vi begynder at tale mere åbent om nervelatter.
+            “Vi er et folkefærd, der tager os selv meget alvorligt,” siger Dr. Vestergaard. “Men nogle gange skal man
+            bare
+            acceptere, at kroppen reagerer - også når det ikke passer ind i stemningen.”</p>
+          <h3>En uventet trøst</h3>
+          <p>Selv om det kan føles som verdens ende at grine på det forkerte tidspunkt, peger forskerne på én positiv
+            ting: det
+            viser, at vi stadig har følelser - også når vi prøver at skjule dem.
+            Så næste gang du står midt i en alvorlig situation og mærker latteren bygge sig op, så husk: du er ikke
+            alene. Hele
+            Danmark kæmper lige nu med det samme.</p>
+
+          <button popovertarget="popup" id="close_btn1">LUK</button>
+        </div>
+
+        <button popovertarget="popup" class="cta_btn" id="cta_open1">Læs mere</button>
       </article>
+
+
+
+
+      <!--Artikel 2 -->
       <article class="news_card">
-        <h3>Nyhed</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+        <h3>LÆGEKONFERENCE AFBRUDT - EFTER MASSEUDBRUD AF LATTER</h3>
+        <p>Et oplæg om stresshåndtering tog en uventet drejning, da salen eksploderede i ukontrolleret grin. Eksperter
+          kalder det
+          “kollektiv nervelatter” - vi kalder det ironisk timing.</p>
+        <img class="b-2" src="img/artikel2.png" alt="news_img">
+
+
+        <div popover id="popup">
+          <h2>LÆGEKONFERENCE AFBRUDT - EFTER MASSEUDBRUD AF LATTER</h2>
+          <p>En ellers højtidelig lægekonference om stresshåndtering måtte i dag afbrydes, da flere deltagere pludselig
+            brød ud i
+            ukontrolleret latter midt under et oplæg om - ironisk nok - kontroltab.</p>
+          <img src="img/artikel2.png" alt="news_img2">
+          <h3>Aarhus, torsdag morgen</h3>
+          <p>Ifølge øjenvidner begyndte det hele med et enkelt fnis på bagerste række, som hurtigt spredte sig som en
+            bølge gennem
+            salen. Foredragsholderen, overlæge Henrik Madsen, forsøgte tappert at fortsætte, men da han sagde ordene “vi
+            skal tage
+            vores følelser alvorligt”, brød salen sammen.
+            “Det var som om nogen havde trykket på en knap,” fortæller en forvirret deltager. “Folk grinede, men ingen
+            vidste
+            hvorfor. Det var… smukt og frygteligt på samme tid.”</p>
+          <h3>“Et klassisk eksempel på kollektiv nervelatter”</h3>
+          <p>Adfærdsforsker Dr. Karen Vestergaard kalder hændelsen et “tekstbogseksempel” på nervelatter i flok.
+            “Når én person slipper kontrollen, spejler andre det ubevidst. Hjernen tror, situationen er sjov, selvom den
+            egentlig er
+            alvorlig. Det bliver en kædereaktion - og så er der ingen vej tilbage.”
+            Ifølge forskeren er netop konferencer, foredrag og ceremonier særligt udsatte:
+            “Jo mere alvor, jo større risiko for latter. Det er en form for social kortslutning.”</p>
+          <h3>Uheldigt - men ufarligt</h3>
+          <p>Arrangørerne understreger, at ingen kom til skade, men at flere måtte forlade lokalet for at få vejret.
+            “Det er svært
+            at tale om stresshåndtering, når 200 mennesker griner ukontrolleret,” udtaler en talsmand tørt.</p>
+          <h3>En nation på kanten af grin</h3>
+          <p>Episoden føjer sig til en række nylige hændelser, hvor danskere har mistet kontrollen over deres grin i
+            upassende
+            situationer. Psykologer advarer nu om, at presset for at være alvorlig hele tiden faktisk kan øge risikoen
+            for, at man
+            bryder sammen i grin.
+            “Jo mere du forsøger at holde masken, jo mere skriger din krop efter at bryde ud,” siger Dr. Vestergaard.
+            “Det er lidt
+            som at prøve at holde et nys inde - før eller siden eksploderer det.”</p>
+          <h3>Hvad lærte vi?</h3>
+          <p>Konferencen blev senere genoptaget, men arrangørerne indrømmer, at stemningen aldrig helt kom tilbage.
+            “Det er svært at tale om følelsesmæssig kontrol, når halvdelen af salen stadig ryster af grin,” siger en
+            deltager.
+            Danmark står nu over for et nyt spørgsmål: Hvordan bevarer man roen i alvoren - når kroppen bare vil grine?
+          </p>
+          <button popovertarget="popup" id="close_btn2">LUK ARTIKLEN</button>
+        </div>
+        <button popovertarget="popup" class="cta_btn" id="cta_open2">Læs mere</button>
       </article>
-      <article class="news_card">
-        <h3>Nyhed</h3>
-        <p>Lorem ipsum dolor sit, sed minima asperiores.</p>
-        <img src="" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
+
+
+      <!--Artikel 3 -->
+      <article class=" news_card">
+        <h3>BREAKING NEWS: VERDEN I LATTER - FN-MØDE BRYDER SAMMEN EFTER UVENTET GRINEANFALD</h3>
+        <p>Et topmøde i FN tog en uventet drejning, da verdens ledere brød ud i ukontrolleret grin midt under en
+          alvorlig debat. En
+          enkelt tolk mistede grebet, og få sekunder senere lo hele salen. Eksperter kalder det “global nervelatter” -
+          vi kalder
+          det et historisk øjeblik af ufrivillig menneskelighed.</p>
+        <img class="b-3" src="img/artikel3.png" alt="news_img">
+
+
+
+        <div popover id="popup3">
+          <h2>VERDEN I LATTER - FN-MØDE BRYDER SAMMEN EFTER UVENTET GRINEANFALD</h2>
+          <p>Et ellers alvorligt topmøde i FN udviklede sig i går til en situation, ingen kunne have forudset. Midt i en
+            tung debat
+            om global krisestyring gik det pludselig galt - eller måske rettere sagt: sjovt.</p>
+          <img src="img/artikel3.png" alt="artikel3">
+          <h3>New York, tirsdag morgen</h3>
+          <p>
+            Ifølge flere øjenvidner begyndte det hele med et forsigtigt fnis fra en tolk, der efter sigende kæmpede med
+            at oversætte
+            en alt for alvorlig sætning. Det lille grin startede som en næsten uhørlig lyd - men som en lavine af
+            nervøsitet spredte
+            det sig i rækkerne, og på få sekunder sad nogle af verdens mest magtfulde mennesker og kæmpede for ikke at
+            bryde sammen
+            af grin.</p>
+          <h3>“Det lød som en hoste - men vi vidste alle, hvad det var”</h3>
+          <p>En anonym diplomat fortæller, at øjeblikket var umuligt at stoppe:
+            “Først troede jeg, det var en hoste. Men så begyndte flere at fnise. Selv generalsekretæren sad og kæmpede
+            med et smil.
+            Da en repræsentant sagde ‘ha-ha’ i stedet for ‘her-her’, var det slut. Hele salen eksploderede.”
+            Sikkerhedsvagter forsøgte uden held at dæmpe stemningen, men endte selv med at trække på smilebåndet. En
+            journalist på
+            stedet beskrev scenen som “et kollektivt sammenbrud af diplomatisk selvkontrol”.</p>
+          <h3>Eksperter kalder det “global nervelatter”</h3>
+          <p>Adfærdsforskere har hurtigt reageret på hændelsen og betegner episoden som global nervelatter - et sjældent
+            fænomen,
+            hvor mennesker i pressede situationer ubevidst spejler hinandens følelser.
+            “Når man sidder i et rum fyldt med spænding og forventning, kan det mindste fnis få hele systemet til at
+            kollapse,”
+            forklarer den franske forsker Dr. Elise Moreau. “Hjernen opfatter latteren som et socialt signal – og så
+            slipper
+            kontrollen. Det er menneskets ældste form for emotionel smitte.”</p>
+          <h3>Mødet måtte afbrydes</h3>
+          <p>Ifølge FN's presseafdeling blev mødet midlertidigt afbrudt i 45 minutter, da flere delegationer havde svært
+            ved at
+            genvinde roen.
+            “Vi har oplevet protester, tekniske fejl og afbrydelser før,” udtalte en talsmand, “men det her var første
+            gang, nogen
+            måtte forlade salen, fordi de grinede for meget.”
+            Da mødet endelig blev genoptaget, var stemningen ifølge flere deltagere væsentligt mere afslappet.
+            “Pludselig talte folk
+            sammen på kryds og tværs. Der blev grinet, men også lyttet. Det var som om, verden lige havde trukket vejret
+            for første
+            gang,” siger en repræsentant fra Brasilien.</p>
+
+          <button popovertarget="popup" id="close_btn3">LUK ARTIKLEN</button>
+
+        </div>
+        <button popovertarget="popup" class="cta_btn" id="cta_open3">Læs mere </button>
       </article>
+
+
+
+
+
     </section>
   </main>
 
@@ -117,6 +309,8 @@
   </footer>
   <script src="js/burger.js"></script>
   <script src="js/main.js"></script>
+  <script src="dialog.js"></script>
+  <script src="js/dark.js"></script>
 </body>
 
 </html>
